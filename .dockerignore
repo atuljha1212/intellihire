@@ -1,0 +1,21 @@
+# Secrets: never bake credentials into the image (.env.example stays, as the documented template)
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local runtime state: the SQLite DB, uploaded resumes/videos and vector indexes contain PII
+data/
+models/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/

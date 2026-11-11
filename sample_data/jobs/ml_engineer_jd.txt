@@ -1,0 +1,26 @@
+Machine Learning Engineer - Talent Intelligence Platform
+Department: AI Engineering | Location: Bengaluru (Hybrid)
+
+About the role
+We are building an AI-powered recruitment platform that reads resumes and job descriptions, ranks candidates and explains every decision.
+
+Responsibilities:
+- Design and build NLP pipelines for resume parsing, entity extraction and semantic search
+- Train, evaluate and deploy machine learning models for candidate-job matching
+- Build retrieval-augmented generation (RAG) features on top of vector databases
+- Ship models as REST APIs in Docker containers on AWS and monitor them in production
+- Collaborate with product and recruiters to make model decisions explainable
+
+Requirements:
+- 3-5 years of professional experience in machine learning or NLP
+- Strong Python, SQL and Git
+- Hands-on experience with PyTorch or TensorFlow and scikit-learn
+- Experience with natural language processing and transformer embeddings
+- Experience building REST APIs and deploying with Docker
+
+Nice to have:
+- Kubernetes, LangChain, FAISS or other vector databases
+- Experience with large language models and prompt engineering
+- AWS certification
+
+Education: Bachelor's degree in Computer Science or a related field.

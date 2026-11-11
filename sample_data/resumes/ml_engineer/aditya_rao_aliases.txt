@@ -1,0 +1,19 @@
+ADITYA RAO
+aditya.rao@example.com | +91 91000 99900
+
+Summary
+ML engineer, 4 yrs. Writes about NLP and ML ops.
+
+Experience
+ML Engineer, Insightly - Oct 2022 - Present
+- Built ranking models with sklearn and torch
+- Served models via RESTful API on k8s; data in postgres
+- Built a retrieval augmented generation chatbot using a vector db
+Data Engineer, PipeWorks - Nov 2021 - Sep 2022
+- ETL in pyspark, version control with github
+
+Education
+B.E. in Computer Engineering, Mumbai University, 2017 - 2021
+
+Skills
+py3, sklearn, torch, nlp, postgres, k8s, dockerfile, aws lambda, github

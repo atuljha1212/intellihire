@@ -1,0 +1,17 @@
+KARAN MEHTA
+karan.mehta@example.com | +91 90000 11122
+
+Summary
+Data analyst with 3 years of experience turning business data into decisions.
+
+Experience
+Data Analyst, RetailMax - Mar 2022 - Present
+- Built Tableau and Power BI dashboards for 40 stores
+- Wrote complex SQL on MySQL
+- Automated reports with Excel VBA and Python pandas
+
+Education
+B.Com, Delhi University, 2018 - 2021
+
+Skills
+SQL, MySQL, Excel, Tableau, Power BI, Python, Pandas, Statistics

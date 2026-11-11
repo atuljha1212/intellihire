@@ -1,0 +1,41 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      # Set these in .env (or the shell). The defaults are for local development only:
+      # change MYSQL_PASSWORD and MYSQL_ROOT_PASSWORD before any shared or public use.
+      MYSQL_DATABASE: intellihire
+      MYSQL_USER: intellihire
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-intellihire}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-change-me-root}
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    # Not published to the host: the app reaches MySQL over the compose network.
+    # To inspect the database from the host, use: ports: ["127.0.0.1:3306:3306"]
+    volumes: [mysql_data:/var/lib/mysql]
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u$$MYSQL_USER -p$$MYSQL_PASSWORD"]
+      interval: 5s
+      retries: 20
+
+  app:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    # Behind a reverse proxy (or Docker NAT) every user can share one client IP for the
+    # login throttle: set TRUSTED_PROXY_HOPS in .env to the number of proxies that add
+    # X-Forwarded-For, or raise/disable LOGIN_MAX_FAILURES_PER_IP (see README section 8).
+    environment:
+      DATABASE_URL: mysql+pymysql://intellihire:${MYSQL_PASSWORD:-intellihire}@mysql:3306/intellihire
+    ports: ["8501:8501"]
+    volumes:
+      - app_data:/app/data
+      - app_models:/app/models
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+volumes:
+  mysql_data:
+  app_data:
+  app_models:

@@ -1,0 +1,21 @@
+VIKRAM SINGH
+vikram.singh@example.com | +91 95000 55566
+
+Summary
+DevOps engineer with 6 years of experience in cloud infrastructure.
+
+Experience
+DevOps Engineer, CloudNine - Feb 2020 - Present
+- Managed Kubernetes clusters on AWS EKS with Terraform and Helm
+- Built CI/CD with Jenkins and GitHub Actions
+System Administrator, NetServe - Jan 2018 - Jan 2020
+- Linux administration, Bash scripting, Nginx
+
+Education
+B.Tech in Electronics, VIT, 2014 - 2018
+
+Skills
+AWS, Docker, Kubernetes, Terraform, Jenkins, Linux, Bash, Python, Git
+
+Certifications
+Certified Kubernetes Administrator (CKA)

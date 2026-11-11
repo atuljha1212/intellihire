@@ -1,0 +1,15 @@
+SAMEER ALI
+sameer.ali@example.com | +91 90300 30303
+
+Summary
+Backend Java developer, 5 years with Spring Boot and microservices.
+
+Experience
+Backend Engineer, PayCore - Jun 2021 - Present
+- Spring Boot microservices, Kafka, Oracle, Docker
+
+Education
+B.E. in Computer Science, 2016 - 2020
+
+Skills
+Java, Spring Boot, Microservices, Kafka, SQL, Docker, Git
